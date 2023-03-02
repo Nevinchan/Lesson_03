@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task_3</title>
+</head>
+<body>
+   <h1>Задача 3</h1>
+   <p>Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+</p>
+
+<script>
+
+//Вводим данные
+
+const minNumber = 1
+const maxNumber = 5
+const randomNumber = minNumber + Math.floor(Math.random() * (maxNumber - minNumber + 1))
+
+
+//Выполняем программу
+
+const firstAnswer = parseInt(prompt(`Угадай число от 1 до 5 , первая попытка`,``))
+const secondAnswer = parseInt(prompt(`Угадай число от 1 до 5 , вторая попытка`,``))
+if (randomNumber == firstAnswer)
+document.write (`Вы угадали с первой попытки, случайное число ${randomNumber}`)
+else if (randomNumber == secondAnswer)
+   document.write(`Вы угадали со второй попытки, случайное число ${randomNumber}`)
+   else {
+      document.write (`Вы не угадали, случайное число ${randomNumber}`)
+   }
+
+
+
+
+
+
+</script>
+<br>
+<a href="./index.html">Вернуться</a>
+   
+</body>
+</html>

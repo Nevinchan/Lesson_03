@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task_7</title>
+</head>
+<body>
+   <h1>Задача 7</h1>
+   <p>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</p>
+
+   <script>
+      //Вводим данные
+      const monthNumber = parseInt(prompt(`Введите номер месяца `,``))
+      const winter = (1, 2, 12)
+      const spring = (3,4,5)
+      const summer = (6,7,8)
+      const autumn = (9,10,11)
+      
+      //Получаем данные и выполняем программу
+      
+      if (monthNumber == 1 || monthNumber == 2 || monthNumber == 12)
+      document.write (`winter`)
+      else if (monthNumber == 3 || monthNumber == 4 || monthNumber == 5)
+            document.write(`spring`)
+      else if (monthNumber == 6 || monthNumber == 7 || monthNumber == 8)
+         document.write(`summer`)
+      else if (monthNumber == 9 || monthNumber == 10 || monthNumber == 11)
+         document.write(`autumn`)
+         else
+         document.write (`Не корректное значение`)
+
+
+
+   </script>
+
+   <br>
+
+   <a href="./index.html">Вернуться</a>
+   
+</body>
+</html>

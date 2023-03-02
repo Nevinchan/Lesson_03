@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_03</title>
+</head>
+<body>
+   <h1>Задача 1</h1>
+<p>З клавіатури вводяться імена двох дітей та кількість у них цукерок. <br>
+    Вивести на екран ім’я тієї дитини, у якої кількість цукерок є більшою, <br> або вивести, що кількість однакова.
+</p>
+<script>
+   //Вводим данные
+   const firstChaildname = prompt("Ввести имя первого ребенка","0")
+   const candyforFirstchild = parseInt( prompt("Количество конфет у первого ребенка","0"))
+   const secondChildname  = prompt("Ввести имя второго ребенка","0")
+   const candyforSecondchaild = parseInt(prompt("Количество конфет у второго ребенка","0"))
+
+   //Получаем данные и выполняем программу
+   //Если candyforFirstchild > candyforSecondchaild
+   //В результате получаем firstChaildname
+   //Если candyforFirstchild > candyforSecondchaild
+   //В результате получаем candyforSecondchaild
+   //Если ни одно из условий не верно то количеств конфет равно
+
+   if(candyforFirstchild > candyforSecondchaild)
+   document.write (`${firstChaildname} имеет больше конфет`)
+   else if (candyforFirstchild < candyforSecondchaild)
+   document.write (`${secondChildname} имеет больше конфет `)
+   else if (candyforFirstchild == candyforSecondchaild)
+   document.write (`${candyforFirstchild == candyforSecondchaild} конфет одинаковое количество `) 
+   
+   
+</script>   
+
+<br>
+
+<a href="./index.html">Вернуться</a>
+
+   
+</body>
+</html>

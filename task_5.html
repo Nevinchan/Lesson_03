@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task_5</title>
+</head>
+<body>
+   <h1>Задача 5</h1>
+   <p>З клавіатури вводиться назва категорії водія
+   (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль).
+   Вивести на екран назву транспортного засобу, яким він може керувати.</p>
+
+   <script>
+      // Вводим данные
+      drivingCategory = prompt(`Введите латиницей большими буквами категорию водителя А В С`)
+      const motorbike = `A`
+      const car = `B`
+      const truck = `c`
+
+      // Получаем данные и выполняем программу
+
+      if (drivingCategory == motorbike)
+         document.write (`C вашей категорией можите водить мотоцикл`)
+      else if (drivingCategory == car)
+         document.write(`C вашей категорией можите водить легковой автомобиль`)
+      else if (drivingCategory == truck)
+         document.write(`C вашей категорией можите водить грузовой автомобиль`)
+         else 
+         document.write (`Не корректная категория`)
+
+
+
+   </script>
+
+<br>
+<a href="./index.html">Вернуться</a>
+   
+</body>
+</html>
